@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome App</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome App 🚀</h1>
+
+      <form method="post">
+        <input type="text" name="name" placeholder="Enter your name" required />
+        <button type="submit">Submit</button>
+      </form>
+
+      {% if message %}
+      <p class="welcome">{{ message }}</p>
+      {% endif %}
+    </div>
+  </body>
+</html>
